@@ -1,0 +1,45 @@
+
+function output(){
+    let name = document.getElementById('value');
+    let landing = document.getElementById('hi'); 
+    switch(name.value){
+      case "Monday":
+      case  "monday":
+      landing.innerHTML='Today is Cardio day, do 30 minutes plus stretching';
+      break;
+      case "Tuesday":
+    case "tuesday":    
+      landing.innerHTML='Today is Pull day so Back, Biceps, and Hamstrings';  
+    break;
+    case "Wednesday":
+        case "wednesday":
+      landing.innerHTML = 'Today is Push day so Chest, Triceps, Shoulders, and Quads';
+    break;
+    case "Thursday":
+        case "thursday":
+      landing.innerHTML = ' OFF DAY!';
+      break;
+    case "Friday":
+        case "friday":
+        landing.innerHTML='Today is Pull day so Back, Biceps, and Hamstrings';  
+        break;
+    case "Saturday":
+        case "saturday":
+        landing.innerHTML = 'Today do Push day so Chest, Triceps, Shoulders, and Quads';
+        break;
+    case "Sunday":
+        case "sunday":
+        landing.innerHTML='Today is Cardio day, do 30 minutes plus stretching';
+        break;
+     
+        default:
+            landing.innerHTML='Pick a day monday thru sunday please';
+
+    }  
+
+}
+
+  function refresh(){
+            document.getElementById('hi').innerHTML='Type in a day please';
+            document.getElementById('hi').value = '';
+        }
